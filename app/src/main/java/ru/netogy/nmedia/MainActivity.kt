@@ -21,6 +21,7 @@ class MainActivity : ComponentActivity() {
             NmediaTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Greeting(
+                        name = "Nmedia!",
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
@@ -30,9 +31,9 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(modifier: Modifier = Modifier) {
+fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
-        text = "Nmedia!",
+        text = name,
         modifier = modifier
     )
 }
@@ -41,6 +42,6 @@ fun Greeting(modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     NmediaTheme {
-        Greeting("Android")
+        Greeting("Nmedia!")
     }
 }
