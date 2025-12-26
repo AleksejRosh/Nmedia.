@@ -6,7 +6,6 @@ on:
   pull_request:
     branches: '*'
 
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,8 +26,6 @@ jobs:
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
-        with: 
-          name: app-debag.apk
-          path: ap/build/outputs/apk/debug/app-debag.apk
-
-        
+        with:
+          name: app-debug.apk
+          path: app/build/outputs/apk/debug/app-debug.apk
