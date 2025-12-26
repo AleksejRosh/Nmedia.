@@ -29,6 +29,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with: 
           name: app-debag.apk
-          path: ap/build/outputs/apk/debug/app/debag.apk
+          path: ap/build/outputs/apk/debug/app-debag.apk
 
         
